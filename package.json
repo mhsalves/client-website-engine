@@ -6,7 +6,7 @@
   "author": "Matheus Alves <matheus.alves@meliuz.com.br>",
   "license": "MIT",
   "bin": {
-    "start-dev": "./bin/start-dev"
+    "start-dev": "./bin/start-dev.js"
   },
   "dependencies": {
     "concurrently": "^7.6.0"

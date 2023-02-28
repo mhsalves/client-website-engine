@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const concurrently = require('concurrently');
 
 const COMMAND_DEV = 'yarn dev';
@@ -13,4 +15,15 @@ const commands = [
   ...workspaces.map(WORKSPACE_COMMAND_FORMAT),
 ];
 
-concurrently(commands);
+function run() {
+  try {
+    concurrently(commands);
+  } catch (ex) {
+    console.error(ex);
+    packagerProcess.kill();
+    process.exit(1);
+  }
+  concurrently(commands);
+}
+
+module.exports = { run };
