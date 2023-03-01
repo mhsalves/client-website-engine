@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "tools/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "bin",
+    "dist"
+  ]
+}
