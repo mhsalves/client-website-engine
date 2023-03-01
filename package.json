@@ -9,6 +9,7 @@
     "start-dev": "./bin/start-dev.js"
   },
   "dependencies": {
+    "argparse": "^2.0.1",
     "concurrently": "^7.6.0"
   }
 }
