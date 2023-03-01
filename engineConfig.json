@@ -1,0 +1,7 @@
+{
+  "engineConfig": {
+    "modules": [
+      "@mhsalves/poc-client-website-remote"
+    ]
+  }
+}
