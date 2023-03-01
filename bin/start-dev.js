@@ -15,15 +15,11 @@ const commands = [
   ...workspaces.map(WORKSPACE_COMMAND_FORMAT),
 ];
 
-function run() {
-  try {
-    concurrently(commands);
-  } catch (ex) {
-    console.error(ex);
-    packagerProcess.kill();
-    process.exit(1);
-  }
-  concurrently(commands);
-}
+console.log(commands);
 
-module.exports = { run };
+const { result } = concurrently(commands);
+result
+  .then(a => console.log(a))
+  .catch(e => console.error(e));
+
+console.log('ddd');
