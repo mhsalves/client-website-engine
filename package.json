@@ -1,8 +1,8 @@
 {
-  "name": "@mhsalves/poc-client-website-cli",
+  "name": "@mhsalves/client-website-engine",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:mhsalves/poc-client-website-cli.git",
+  "repository": "git@github.com:mhsalves/client-website-engine.git",
   "author": "Matheus Alves <matheus.alves@meliuz.com.br>",
   "license": "MIT",
   "bin": {
