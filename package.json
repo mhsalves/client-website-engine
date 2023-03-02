@@ -6,14 +6,14 @@
   "author": "Matheus Alves <matheus.alves@meliuz.com.br>",
   "license": "MIT",
   "bin": {
-    "start-dev": "./bin/start-dev.js"
+    "engine": "./bin/engine.js"
   },
   "scripts": {
     "build:clean": "rm -rf dist",
     "build:ts": "tsc",
     "build": "yarn build:clean && yarn build:ts",
     "start:cli": "NODE_ENV=development node dist/start_dev -c engineConfig.json",
-    "start-dev": "yarn build && yarn start:cli"
+    "start:dev": "yarn build && yarn start:cli"
   },
   "dependencies": {
     "argparse": "^2.0.1",
